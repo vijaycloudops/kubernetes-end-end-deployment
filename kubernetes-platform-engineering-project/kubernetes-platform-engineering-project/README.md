@@ -1,6 +1,6 @@
 # Kubernetes Platform Deployment with CI/CD and GitOps
 
-An intermediate/advanced DevOps portfolio project demonstrating how to package, secure, deploy, scale, and continuously deliver a containerized application to Kubernetes.
+DevOps project demonstrating how to package, secure, deploy, scale, and continuously deliver a containerized application to Kubernetes.
 
 > **Portfolio note:** This is a hands-on lab project. Deploy it, capture your own evidence, and document the decisions and troubleshooting you perform. Do not claim production use unless it has genuinely been used in production.
 
@@ -238,21 +238,6 @@ Common causes:
 - Ingress has no address: check that an Ingress controller is installed and running.
 - HPA shows unknown metrics: install or repair Metrics Server and check CPU requests.
 - NetworkPolicy blocks traffic: verify your CNI supports NetworkPolicy and adjust the ingress-controller namespace/labels.
-
-## Interview walkthrough
-
-Be prepared to explain:
-
-1. Why a Deployment is used instead of creating Pods directly.
-2. Difference between readiness, liveness, and startup probes.
-3. Why CPU/memory requests and limits matter.
-4. How HPA obtains metrics and decides to scale.
-5. How a ClusterIP Service discovers Pods using labels.
-6. How Ingress differs from a Service of type LoadBalancer or NodePort.
-7. How GitHub Actions builds and publishes the image.
-8. How Argo CD uses Git as the desired state and reconciles drift.
-9. Why Secrets should not be committed as plain text.
-10. How you would promote the same image through dev, staging, and production.
 
 ## Suggested evidence to add to your portfolio
 
